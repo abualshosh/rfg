@@ -39,3 +39,8 @@ jobs:
 
       # run tests!
       - run: mvn integration-test
+
+
+      - run:
+            name : Build the docker iamge
+            command: mvn bootRepackage -Pprod vuildDocker
